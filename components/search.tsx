@@ -79,6 +79,7 @@ interface SearchButtonProps extends React.ComponentProps<typeof Button> {}
 
 export const SearchButton: React.FC<SearchButtonProps> = ({
   className,
+  children,
   ...buttonProps
 }) => {
   const [modifierLabel, setModifierLabel] = useState("⌘");
@@ -139,7 +140,7 @@ export const SearchButton: React.FC<SearchButtonProps> = ({
     >
       <span className="flex items-center gap-2 text-muted-foreground opacity-80">
         <SearchIcon size={24} color="currentColor" />
-        <span className="hidden sm:inline">Search</span>
+        <span className="hidden sm:inline">{children ?? "Search"}</span>
       </span>
       <div className="hidden md:flex gap-0.5">
         <kbd
