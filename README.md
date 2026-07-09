@@ -9,7 +9,7 @@ search-as-you-type, highlighting, keyboard navigation (<kbd>⌘K</kbd>) — powe
 
 ![Screenshot of the starter's search experience](docs/screenshot.png)
 
-**Live demo:** _coming soon_
+**Live demo:** [algolia-vercel-starter.vercel.app](https://algolia-vercel-starter.vercel.app)
 
 ## Deploy your own
 
