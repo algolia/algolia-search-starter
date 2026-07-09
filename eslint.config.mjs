@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored SiteSearch registry code (https://sitesearch.algolia.com):
+    "components/search.tsx",
+    "components/ui/**",
+    "hooks/use-keyboard-navigation.ts",
   ]),
 ]);
 
