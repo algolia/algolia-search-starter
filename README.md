@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Algolia Vercel Starter
 
-## Getting Started
+A minimal [Next.js](https://nextjs.org) starter showing how to use [Algolia](https://www.algolia.com)
+with the [Algolia integration on the Vercel Marketplace](https://vercel.com/marketplace/algolia-production).
+Deploy it, seed the sample products, and you have a full search experience —
+search-as-you-type, highlighting, keyboard navigation (<kbd>⌘K</kbd>) — powered by
+[SiteSearch](https://sitesearch.algolia.com) components built on
+[React InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/).
 
-First, run the development server:
+![Screenshot of the starter's search experience](docs/screenshot.png)
+
+**Live demo:** _coming soon_
+
+## Deploy your own
+
+Deploying this starter with the button below installs the Algolia integration on your new
+project. It provisions an Algolia app and injects the API keys as environment variables —
+no manual configuration needed.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-vercel-starter&project-name=algolia-starter&repository-name=algolia-vercel-starter&stores=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia-production%22%2C%22productSlug%22%3A%22application%22%7D%5D)
+
+After the first deploy, seed the sample data once:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/<your-account>/algolia-vercel-starter && cd algolia-vercel-starter
+npm install
+npx vercel link         # link to the project you just deployed
+npx vercel env pull .env.local
+npm run seed            # pushes data/products.json to the starter_products index
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Reload your deployment — search is live.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How it works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The integration injects three environment variables into the Vercel project:
 
-## Learn More
+| Variable | Purpose | Browser-safe? |
+| --- | --- | --- |
+| `ALGOLIA_APP_ID` | Identifies your Algolia application | ✅ exposed as `NEXT_PUBLIC_ALGOLIA_APP_ID` |
+| `ALGOLIA_SEARCH_API_KEY` | Search-only key used by the frontend | ✅ exposed as `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY` |
+| `ALGOLIA_WRITE_API_KEY` | Indexing key used by `npm run seed` | ❌ server-side only, never exposed |
 
-To learn more about Next.js, take a look at the following resources:
+The browser-safe values are mapped in [`next.config.ts`](next.config.ts) via the `env` key.
+The write key is deliberately **not** mapped.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [`app/page.tsx`](app/page.tsx) — landing page rendering the search experience
+- [`components/search.tsx`](components/search.tsx) — SiteSearch component (`algoliasearch` lite client + `react-instantsearch`)
+- [`data/products.json`](data/products.json) — 20 sample products
+- [`scripts/seed.mjs`](scripts/seed.mjs) — idempotent seed script targeting the `starter_products` index
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Local development
 
-## Deploy on Vercel
+```bash
+git clone https://github.com/algolia/algolia-vercel-starter && cd algolia-vercel-starter
+npm install
+npx vercel link          # link to a Vercel project with the Algolia integration installed
+npx vercel env pull .env.local
+npm run seed             # idempotent — safe to re-run
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) and hit <kbd>⌘K</kbd>.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Learn more
+
+- [Algolia documentation](https://www.algolia.com/doc/)
+- [Algolia on the Vercel Marketplace](https://vercel.com/marketplace/algolia-production)
+- [SiteSearch component registry](https://sitesearch.algolia.com)
+- [React InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)
+
+## License
+
+[MIT](LICENSE)
