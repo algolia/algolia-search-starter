@@ -1,0 +1,182 @@
+[
+  {
+    "objectID": "1",
+    "name": "AirPods Pro 2",
+    "brand": "Apple",
+    "category": "Headphones",
+    "price": 249,
+    "rating": 4.7,
+    "in_stock": true
+  },
+  {
+    "objectID": "2",
+    "name": "Sony WH-1000XM5 Wireless Headphones",
+    "brand": "Sony",
+    "category": "Headphones",
+    "price": 399,
+    "rating": 4.8,
+    "in_stock": true
+  },
+  {
+    "objectID": "3",
+    "name": "Bose QuietComfort Ultra",
+    "brand": "Bose",
+    "category": "Headphones",
+    "price": 429,
+    "rating": 4.6,
+    "in_stock": false
+  },
+  {
+    "objectID": "4",
+    "name": "MacBook Air M3 13-inch",
+    "brand": "Apple",
+    "category": "Laptops",
+    "price": 1099,
+    "rating": 4.9,
+    "in_stock": true
+  },
+  {
+    "objectID": "5",
+    "name": "Dell XPS 13 Plus",
+    "brand": "Dell",
+    "category": "Laptops",
+    "price": 1299,
+    "rating": 4.4,
+    "in_stock": true
+  },
+  {
+    "objectID": "6",
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "brand": "Lenovo",
+    "category": "Laptops",
+    "price": 1549,
+    "rating": 4.5,
+    "in_stock": true
+  },
+  {
+    "objectID": "7",
+    "name": "iPhone 16 Pro",
+    "brand": "Apple",
+    "category": "Smartphones",
+    "price": 999,
+    "rating": 4.8,
+    "in_stock": true
+  },
+  {
+    "objectID": "8",
+    "name": "Samsung Galaxy S25 Ultra",
+    "brand": "Samsung",
+    "category": "Smartphones",
+    "price": 1199,
+    "rating": 4.7,
+    "in_stock": true
+  },
+  {
+    "objectID": "9",
+    "name": "Google Pixel 9 Pro",
+    "brand": "Google",
+    "category": "Smartphones",
+    "price": 899,
+    "rating": 4.6,
+    "in_stock": false
+  },
+  {
+    "objectID": "10",
+    "name": "iPad Pro 13-inch M4",
+    "brand": "Apple",
+    "category": "Tablets",
+    "price": 1299,
+    "rating": 4.8,
+    "in_stock": true
+  },
+  {
+    "objectID": "11",
+    "name": "Samsung Galaxy Tab S10",
+    "brand": "Samsung",
+    "category": "Tablets",
+    "price": 799,
+    "rating": 4.5,
+    "in_stock": true
+  },
+  {
+    "objectID": "12",
+    "name": "Sony PlayStation 5 Pro",
+    "brand": "Sony",
+    "category": "Gaming",
+    "price": 699,
+    "rating": 4.7,
+    "in_stock": true
+  },
+  {
+    "objectID": "13",
+    "name": "Nintendo Switch 2",
+    "brand": "Nintendo",
+    "category": "Gaming",
+    "price": 449,
+    "rating": 4.9,
+    "in_stock": true
+  },
+  {
+    "objectID": "14",
+    "name": "Logitech MX Master 3S Mouse",
+    "brand": "Logitech",
+    "category": "Accessories",
+    "price": 99,
+    "rating": 4.8,
+    "in_stock": true
+  },
+  {
+    "objectID": "15",
+    "name": "Keychron K8 Mechanical Keyboard",
+    "brand": "Keychron",
+    "category": "Accessories",
+    "price": 89,
+    "rating": 4.6,
+    "in_stock": true
+  },
+  {
+    "objectID": "16",
+    "name": "Sonos Era 300 Speaker",
+    "brand": "Sonos",
+    "category": "Audio",
+    "price": 449,
+    "rating": 4.5,
+    "in_stock": true
+  },
+  {
+    "objectID": "17",
+    "name": "JBL Flip 7 Bluetooth Speaker",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 129,
+    "rating": 4.4,
+    "in_stock": true
+  },
+  {
+    "objectID": "18",
+    "name": "Apple Watch Series 10",
+    "brand": "Apple",
+    "category": "Wearables",
+    "price": 399,
+    "rating": 4.7,
+    "in_stock": true
+  },
+  {
+    "objectID": "19",
+    "name": "Garmin Fenix 8 Sports Watch",
+    "brand": "Garmin",
+    "category": "Wearables",
+    "price": 999,
+    "rating": 4.8,
+    "in_stock": false
+  },
+  {
+    "objectID": "20",
+    "name": "Anker 737 Power Bank",
+    "brand": "Anker",
+    "category": "Accessories",
+    "price": 149,
+    "rating": 4.6,
+    "in_stock": true
+  }
+]
