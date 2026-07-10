@@ -19,9 +19,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Algolia Vercel Starter",
+  title: "Algolia Search Starter for Next.js on Vercel",
   description:
-    "Next.js starter with Algolia search, pre-wired by the Algolia integration on the Vercel Marketplace.",
+    "Add fast site search to your Next.js app in one click. This Algolia starter deploys from the Vercel Marketplace, provisions your search index automatically, and includes a prebuilt search UI.",
 };
 
 export default function RootLayout({

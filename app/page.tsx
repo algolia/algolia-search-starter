@@ -36,7 +36,7 @@ export default function Home() {
       <main className="flex flex-1 flex-col items-center justify-center px-6 text-center">
         <h1 className="font-sora max-w-3xl text-3xl font-bold tracking-tight text-balance text-gray-900 sm:text-5xl lg:text-6xl dark:text-white">
           <span className="text-[#003dff] dark:text-indigo-400">
-            Instant search
+            Fast, relevant search
           </span>{" "}
           for your Vercel app
         </h1>
