@@ -9,7 +9,7 @@ const searchApiKey = process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY;
 const INDEX_NAME = "starter_products";
 const REPO_URL = "https://github.com/algolia/algolia-vercel-starter";
 const DEPLOY_URL =
-  "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-vercel-starter&project-name=algolia-starter&repository-name=algolia-vercel-starter&stores=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia-production%22%2C%22productSlug%22%3A%22application%22%7D%5D";
+  "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-vercel-starter&project-name=algolia-starter&repository-name=algolia-vercel-starter&stores=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia%22%2C%22productSlug%22%3A%22application%22%7D%5D";
 
 export default function Home() {
   const isConfigured = Boolean(appId && searchApiKey);
@@ -75,7 +75,7 @@ export default function Home() {
                 <li>
                   Install the{" "}
                   <a
-                    href="https://vercel.com/marketplace/algolia-production"
+                    href="https://vercel.com/marketplace/algolia"
                     className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
                   >
                     Algolia integration
@@ -166,7 +166,7 @@ export default function Home() {
           Algolia docs
         </a>
         <a
-          href="https://vercel.com/marketplace/algolia-production"
+          href="https://vercel.com/marketplace/algolia"
           className="hover:text-gray-900 dark:hover:text-gray-100"
         >
           Marketplace listing

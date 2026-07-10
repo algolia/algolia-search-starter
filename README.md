@@ -1,7 +1,7 @@
 # Algolia Search Starter
 
 A minimal [Next.js](https://nextjs.org) starter showing how to use [Algolia](https://www.algolia.com)
-with the [Algolia integration on the Vercel Marketplace](https://vercel.com/marketplace/algolia-production).
+with the [Algolia integration on the Vercel Marketplace](https://vercel.com/marketplace/algolia).
 Deploy it, seed the sample products, and you have a full search experience —
 search-as-you-type, highlighting, keyboard navigation (<kbd>⌘K</kbd>) — powered by
 [SiteSearch](https://sitesearch.algolia.com) components built on
@@ -17,7 +17,7 @@ Deploying this starter with the button below installs the Algolia integration on
 project. It provisions an Algolia app and injects the API keys as environment variables —
 no manual configuration needed.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-search-starter%2F&project-name=algolia-search-starter&repository-name=algolia-search-starter&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia-production%22%2C%22productSlug%22%3A%22application%22%2C%22protocol%22%3A%22storage%22%7D%5D)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-search-starter%2F&project-name=algolia-search-starter&repository-name=algolia-search-starter&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia%22%2C%22productSlug%22%3A%22application%22%2C%22protocol%22%3A%22storage%22%7D%5D)
 
 After the first deploy, seed the sample data once:
 
@@ -65,7 +65,7 @@ Open [http://localhost:3000](http://localhost:3000) and hit <kbd>⌘K</kbd>.
 ## Learn more
 
 - [Algolia documentation](https://www.algolia.com/doc/)
-- [Algolia on the Vercel Marketplace](https://vercel.com/marketplace/algolia-production)
+- [Algolia on the Vercel Marketplace](https://vercel.com/marketplace/algolia)
 - [SiteSearch component registry](https://sitesearch.algolia.com)
 - [React InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)
 
