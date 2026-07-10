@@ -1,4 +1,4 @@
-# Algolia Vercel Starter
+# Algolia Search Starter
 
 A minimal [Next.js](https://nextjs.org) starter showing how to use [Algolia](https://www.algolia.com)
 with the [Algolia integration on the Vercel Marketplace](https://vercel.com/marketplace/algolia-production).
@@ -9,7 +9,7 @@ search-as-you-type, highlighting, keyboard navigation (<kbd>⌘K</kbd>) — powe
 
 ![Screenshot of the starter's search experience](docs/screenshot.png)
 
-**Live demo:** [algolia-vercel-starter.vercel.app](https://algolia-vercel-starter.vercel.app)
+**Live demo:** [algolia-search-starter.vercel.app](https://algolia-search-starter.vercel.app)
 
 ## Deploy your own
 
@@ -17,12 +17,12 @@ Deploying this starter with the button below installs the Algolia integration on
 project. It provisions an Algolia app and injects the API keys as environment variables —
 no manual configuration needed.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-vercel-starter&project-name=algolia-starter&repository-name=algolia-vercel-starter&stores=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia-production%22%2C%22productSlug%22%3A%22application%22%7D%5D)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-search-starter%2F&project-name=algolia-search-starter&repository-name=algolia-search-starter&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia-production%22%2C%22productSlug%22%3A%22application%22%2C%22protocol%22%3A%22storage%22%7D%5D)
 
 After the first deploy, seed the sample data once:
 
 ```bash
-git clone https://github.com/<your-account>/algolia-vercel-starter && cd algolia-vercel-starter
+git clone https://github.com/<your-account>/algolia-search-starter && cd algolia-search-starter
 npm install
 npx vercel link         # link to the project you just deployed
 npx vercel env pull .env.local
@@ -52,11 +52,11 @@ The write key is deliberately **not** mapped.
 ## Local development
 
 ```bash
-git clone https://github.com/algolia/algolia-vercel-starter && cd algolia-vercel-starter
+git clone https://github.com/algolia/algolia-search-starter && cd algolia-search-starter
 npm install
 npx vercel link          # link to a Vercel project with the Algolia integration installed
 npx vercel env pull .env.local
-npm run seed             # idempotent — safe to re-run
+npm run seed             # idempotent - safe to re-run
 npm run dev
 ```
 
