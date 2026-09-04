@@ -18,6 +18,7 @@ project. It provisions an Algolia app and injects the API keys as environment va
 no manual configuration needed.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falgolia%2Falgolia-search-starter%2F&project-name=algolia-search-starter&repository-name=algolia-search-starter&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22algolia%22%2C%22productSlug%22%3A%22application%22%2C%22protocol%22%3A%22other%22%7D%5D)
+[![Build in v0](https://vercel.com/button-v0/default.svg)](https://v0.app/chat?pi=algolia&q=Build+a+Next.js+product+search+demo+that+shows+an+Algolia+%2B+Vercel+stack)
 
 After the first deploy, seed the sample data once:
 
